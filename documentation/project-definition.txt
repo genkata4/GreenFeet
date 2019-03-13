@@ -1,5 +1,19 @@
 Project definition
 
-....
+Develepment of an web application that encourages the use of enviromentally friendly transportation.
 
-...
+It uses GPS information and multiple travel behaviours to calculate the difference between
+the amount of greenhouse gases emmited from the chosen mode of transport and the usual
+use of a car.Measures the distance and time that a user is travelling and uses a global avarage of
+the emission that are/would be produced from the forms of transport.
+
+The amount of greenhouse gases is measured in grams of CO2. This amount is then converted
+into points (1:1), which are counted and are personal (each user has their own), so a
+local or global ranking can be made as a form of competition between the users. Encouragement
+can come in the form of virtual achievements or tockens that in case of practical application 
+can be converted to real world value.
+
+Some uses of the application can be a better distribution of the commuters during rush hours.
+As the travel routes of the users can be made visible to other users, so that people can
+make an informed decision when and how to travel to make tranportation more comfortable and
+optimised.
