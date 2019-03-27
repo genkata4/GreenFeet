@@ -13,10 +13,15 @@ CO2 Counter
 # Team Members and Roles
 
 Ondrej Repa - programmer, documentation/modelling
+
 Alberto Jesús Florido Fernández de Córdoba - project manager, tester
+
 Genadi Ivov Ivanov - project manager,  tester
+
 George Karamalis - programmer, documentation/modelling
+
 Park Soeun - tester, documentation/modelling 
+
 
 
 # Project description
