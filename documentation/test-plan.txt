@@ -1,0 +1,105 @@
+Test plan:
+
+Case 1: User service
+- this set of tests should be automatic and implemented as unit tests using jUnit and Mockito
+
+1.1: Find user by id when the user exits
+-- should find a user with the given id
+
+1.2: Find user by id when the user does not exit
+-- should throw an exception
+
+1.3: Create new user when user with given user name does not exit
+-- should create a new user with the given user name
+
+1.4: Create new user when user with given user name exits
+-- should throw an exception
+
+1.5: Update existing user with given id
+-- should update the user
+
+1.6: Update non-existing user with given id
+-- should throw an exception
+
+1.7: Delete non-existing user with given id
+-- should throw an exception
+
+
+
+Case 2: Route service
+- this set of tests should be automatic and implemented as unit tests using jUnit and Mockito
+
+2.1: Create new route owned by given existing user
+-- should create a new route owned by the given user name
+
+2.2: Create new route owned by given non-existing user
+-- should throw an exception
+
+
+
+Case 3: User controller (API)
+- this set of tests should be performed by manual testing at the end of each sprit
+
+3.1: Find all users on url "/users"
+-- should return array of all users in JSON format where each user should have properties id, userName and carbonFootprint
+
+3.2: Find user by id on url "/users/{id}"
+-- should return an user object in JSON format with properties id, userName and carbonFootprint where property id matches id from url
+-- should return error message if user with given id does not exist
+
+3.3: Find user by user name on url "/users/name/{userName}"
+-- should return user object in JSON format with properties id, userName and carbonFootprint where property userName matches userName from url
+-- should return error message if user with given userName does not exist
+
+3.4: Create new user on url "/users/{userName}" and method POST
+-- should create a new user in database and return user object in JSON format with properties id, userName and carbonFootprint
+-- should return error message if user with given userName already exists
+
+3.5: Update user on url "/users/{userName}" and method PUT
+-- should update existing user in database and return user object in JSON format with properties id, userName and carbonFootprint
+-- should return error message if user with given userName does not exist
+
+3.6: Delete user on url "/users/{userName}" and method DELETE
+-- should delete existing user in database and return successful response with code 200
+-- should return error message if user with given userName does not exist
+
+
+
+Case 4: Route controller (API)
+- this set of tests should be performed by manual testing at the end of each sprit
+
+4.1: Find all possible routes from starting point to destination with given restrictions on url "route/{startingPosition}/{destination}/{type}/{transportMode}"
+-- should return array of routes satisfying filtering rules of type and transport mode with properties distance, time, carbonEmissions, type, transportMode 
+
+4.2: Get all routes by user id on url "/route/user/{userId}"
+-- should return array of all routes owned by user with given userId
+
+4.3: Create a new route for user with userId on route "/route/user/{userId}" and method POST
+-- should create new route owned by user with given userId, update user's carbon footprint and create locations starting point and destination
+
+Case 5: Location controller (API)
+- this set of tests should be performed by manual testing at the end of each sprit
+
+5.1: Find all possible locations based on place string on url "/location/{place}"
+-- should return array of locations satisfying filtering rules of place with properties title, position, vicinity and distance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
