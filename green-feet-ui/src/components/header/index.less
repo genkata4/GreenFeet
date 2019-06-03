@@ -1,0 +1,62 @@
+@import "../../color-palette.less";
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 70px;
+    padding: 18px 50px;
+
+    background-color: @emerald;
+
+    .Header__link {
+        cursor: pointer;
+        text-decoration: none;
+        color: @grey-100;
+        display: flex;
+    }
+
+    img {
+        display: inline-block;
+        max-height: 34px;
+        transform: rotate(90deg);
+        margin-right: 15px;
+    }
+
+    h1 {
+        font-size: 21px;
+        font-weight: 600;
+
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .Header {
+        padding: 18px 100px
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .Header {
+        padding: 18px 150px
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .Header {
+        padding: 18px 200px
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .Header {
+        padding: 18px 250px
+    }
+}

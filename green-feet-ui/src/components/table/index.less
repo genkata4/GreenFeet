@@ -1,0 +1,52 @@
+@import "../../global.less";
+@import "../../color-palette.less";
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    border: 1px solid @grey-500;
+    border-radius: 30px;
+
+    th {
+        font-weight: 700;
+    }
+
+    td, th {
+        padding: 10px 20px;
+        font-size: 18px;
+
+        .Action-button {
+            padding: 5px 10px;
+            margin: 0 3px;
+        }
+    }
+
+    thead {
+        background-color: @grey-400;
+        border: 1px solid @grey-700;
+    }
+
+    tbody, tfoot {
+        background-color: @grey-100;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid @grey-500;
+
+            &:nth-child(2n) {
+                background-color: @grey-200;
+            }
+
+            &.tr-clickable {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: @grey-300;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.text-field {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    &:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 .15rem rgba(0,123,255,.25);
+    }
+
+    &:read-only {
+        border: 0;
+        display: inline-block;
+        width: auto;
+        background-color: inherit;
+        text-overflow: ellipsis;
+    }
+}

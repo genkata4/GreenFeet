@@ -1,0 +1,46 @@
+.Sidebar {
+  position: fixed;
+
+  .Sidebar__nav {
+    width: 220px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: block;
+        margin: 0;
+
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    &.Sidebar__nav--with-header {
+      margin-top: 50px;
+    }
+
+    .Sidebar__nav__link--selected {
+      background-color: #fff;
+      border-radius: .25rem;
+    }
+  }
+
+  .Sidebar__button {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding-left: 0;
+    color: #fff;
+    border: none;
+
+    &:hover {
+      border: none;
+      text-decoration: underline;
+    }
+  }
+
+}

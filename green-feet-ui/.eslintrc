@@ -1,0 +1,76 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "plugins": [
+    "prefer-object-spread",
+    "jest"
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ["./src/**"]
+      }
+    }
+  },
+  "rules": {
+    "max-len": [2, 200],
+    "no-param-reassign": 0,
+    "indent": [2, 4, { "SwitchCase": 1 }],
+    "no-console": 0,
+    "arrow-body-style": 0,
+    "linebreak-style": 0,
+    "object-curly-newline": 0,
+    "function-paren-newline": 0,
+    "object-shorthand": 0,
+    "no-underscore-dangle": 0,
+    "no-restricted-syntax": 0,
+    "arrow-parens": "off",
+    "newline-after-var": "off",
+    "no-trailing-spaces": 0,
+    "operator-linebreak": "off",
+    "space-infix-ops": "off",
+    "implicit-arrow-linebreak": "off",
+    "spaced-comment": "off",
+
+    "prefer-object-spread/prefer-object-spread": 2,
+
+    "react/no-array-index-key": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-no-bind": 0,
+    "react/jsx-closing-tag-location": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-indent-props": [2, 4],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-one-expression-per-line": [true, { "allow": "literal" }],
+    "react/jsx-wrap-multilines": {
+      "logical": "ignore",
+    },
+    "react/destructuring-assignment": "off"
+
+  ,
+
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/mouse-events-have-key-events": 0,
+
+    "jest/no-disabled-tests": 1,
+    "jest/no-focused-tests": 2,
+    "jest/no-identical-title": 2,
+    "jest/prefer-to-have-length": 1,
+    "jest/valid-expect": 2,
+
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0,
+    "import/no-default-export": 1,
+    "import/no-named-default": 0
+  }
+}

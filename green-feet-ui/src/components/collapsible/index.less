@@ -1,0 +1,38 @@
+@import "../../color-palette.less";
+
+.Collapsible {
+    margin: 40px 0;
+    border: 1px solid @grey-500;
+    border-radius: 5px;
+
+    .Collapsible__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: @grey-400;
+        border: 1px solid @grey-500;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .Collapsible__body {
+        padding: 0 50px;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s linear;
+
+        &.Collapsible__body--visible {
+            max-height: 1000px;
+        }
+    }
+
+    &.Collapsible--expanded {
+        .Collapsible__header {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}

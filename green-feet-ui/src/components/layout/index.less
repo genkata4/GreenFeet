@@ -1,0 +1,94 @@
+@import "../../color-palette.less";
+
+.Layout {
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 100%;
+    background-color: @nice-green;
+
+    .Layout__body {
+        padding-top: 220px;
+
+        .Layout__body__content {
+            margin: 0 10px;
+            height: 100%;
+            border-top: 1px solid @primary-900;
+            position: relative;
+
+            h2 {
+                position: absolute;
+                top: -61px;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Layout {
+        .Layout__body {
+            position: relative;
+            height: 100%;
+            padding-top: 180px;
+            margin: 0 auto;
+
+            .Layout__body__content {
+                margin: 0 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Layout {
+        .Layout__body {
+            padding-top: 130px;
+
+            .Layout__body__content {
+                margin: 0 50px 0 350px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .Layout {
+        .Layout__body {
+            .Layout__body__content {
+                margin: 0 100px 0 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .Layout {
+        .Layout__body {
+            .Layout__body__content {
+                margin: 0 150px 0 450px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .Layout {
+        .Layout__body {
+            .Layout__body__content {
+                margin: 0 200px 0 500px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .Layout {
+        .Layout__body {
+            .Layout__body__content {
+                margin: 0 250px 0 550px;
+            }
+        }
+    }
+}

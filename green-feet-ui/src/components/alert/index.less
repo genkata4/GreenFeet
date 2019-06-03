@@ -1,0 +1,31 @@
+.Alert {
+    position: relative;
+    padding-right: 20px !important;
+
+    .Alert__close {
+        cursor: pointer;
+        font-weight: 700;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        position: absolute;
+        right: 20px;
+        top: 8px;
+    }
+
+    &.Alert--error {
+        background-color: @red-050;
+        border: 1px solid @red-200;
+        color: @red-800;
+    }
+
+    &.Alert--warning {
+        background-color: @yellow-050;
+        border: 1px solid @yellow-200;
+        color: @yellow-800;
+    }
+
+    &.Alert--info {
+        background-color: @sky;
+        border: 1px solid @primary-100;
+        color: @primary-600;
+    }
+}

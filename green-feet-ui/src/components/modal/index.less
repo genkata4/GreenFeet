@@ -1,0 +1,97 @@
+@import "../../color-palette.less";
+
+@keyframes close-modal {
+    from {display: block}
+    to {display: none}
+}
+
+@keyframes open-modal-content {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes close-modal-content {
+    from {top: 0; opacity: 1}
+    to {top: -300px; opacity: 0}
+}
+
+.Modal {
+    display: block;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+    &.Modal--closing {
+        animation-name: close-modal;
+        animation-duration: 0.5s;
+    }
+
+    &.Modal--closed {
+        display: none;
+    }
+
+    .Modal__content {
+        background-color: @grey-100;
+        margin: 5% auto; /* 15% from the top and centered */
+        width: 60%;
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: open-modal-content;
+        animation-duration: 0.4s;
+
+        &.Modal__content--small {
+            width: 40%;
+        }
+
+        &.Modal__content--large {
+            width: 80%;
+        }
+
+        &.Modal__content--closing {
+            animation-name: close-modal-content;
+            animation-duration: 0.4s;
+        }
+
+        .Modal__body {
+            padding: 20px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .Modal__header-footer {
+            padding: 16px 16px;
+            background-color: @secondary-100;
+            color: @primary-900;
+            position: relative;
+
+            h3 {
+                margin: 0;
+                text-align: center;
+                font-size: 24px;
+            }
+
+            .Modal__close {
+                color: @primary-900;
+                font-size: 30px;
+                font-weight: bold;
+                position: absolute;
+                top: 12px;
+                right: 17px;
+
+                &:hover,
+                &focus {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}

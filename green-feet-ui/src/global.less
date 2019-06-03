@@ -1,0 +1,54 @@
+@import "./color-palette.less";
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height:100%;
+    position:relative;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: @primary-900;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Page__button-group {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 19%;
+
+    .Page__add-button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+
+        * {
+            width: 100%;
+        }
+    }
+
+    .button {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.Page__table {
+    width: 80%;
+}

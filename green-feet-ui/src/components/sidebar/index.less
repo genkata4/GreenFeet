@@ -1,0 +1,158 @@
+@import "../../color-palette.less";
+
+@counter-style home {
+    system: cyclic;
+    symbols: "\1F3E0";
+    suffix: "    ";
+}
+
+@counter-style tenant {
+    system: cyclic;
+    symbols: "\1F3E6";
+    suffix: "    ";
+}
+
+@counter-style process-template {
+    system: cyclic;
+    symbols: "\1F4C2";
+    suffix: "    ";
+}
+
+@counter-style document-model {
+    system: cyclic;
+    symbols: "\1F4C4";
+    suffix: "    ";
+}
+
+.Sidebar {
+    background-color: @nice-dark-green;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Sidebar__link {
+        display: block;
+        margin: 0;
+
+        text-decoration: none;
+        color: @primary-900;
+        font-size: 18px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: @nice-dark-green;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        .Sidebar__link-home {
+            list-style: home inside;
+        }
+
+        .Sidebar__link-tenant {
+            list-style: tenant inside;
+        }
+
+        .Sidebar__link--process-template {
+            list-style: process-template inside;
+        }
+
+        .Sidebar__link--document-model {
+            list-style: document-model inside;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1200px) {
+    .Sidebar {
+        ul {
+            display: flex;
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            border-bottom: 1px solid @primary-900;
+        }
+
+        .Sidebar__link {
+            width: 25%;
+            padding: 10px 0;
+            border-right: 1px solid @primary-900;
+
+            &:last-of-type {
+                border-right: none;
+            }
+
+            li {
+                text-align: center;
+            }
+        }
+    }
+}
+
+///* Medium devices (landscape tablets, 768px and up) */
+//@media only screen and (min-width: 768px) {...}
+//
+///* Large devices (laptops/desktops, 992px and up) */
+//@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .Sidebar {
+        border-right: 1.5px solid @primary-900;
+        position: fixed;
+        margin: 0;
+        top: 70px;
+        height: 100%;
+
+        ul {
+            width: 300px;
+        }
+
+        .Sidebar__link {
+            display: block;
+            margin: 0;
+            padding: 15px 0 15px 50px;
+
+            border-bottom: 1px solid @primary-900;
+            font-size: 18px;
+            font-weight: 600;
+
+            &:last-of-type {
+                border-bottom: 1px solid @primary-900;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .Sidebar {
+        margin: 0 0 0 100px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .Sidebar {
+        margin: 0 0 0 150px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .Sidebar {
+        margin: 0 0 0 200px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .Sidebar {
+        margin: 0 0 0 250px;
+    }
+}
