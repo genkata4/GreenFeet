@@ -1,0 +1,35 @@
+Project contract:
+
+Team (full names and roles)
+- Unfortunately the team was disassembled and I am the only last member left
+- Therefore, I represent all the roles of project manager, analytic, programmer, tester
+
+
+
+Short description of the project
+
+1. Problem that you aim to solve
+- Main problem and aim is monitoring carbon emissions and footprints
+- Transport sector contribues with over 27% but people are not informed
+- There are many map applications that allows users to navigate and choose transport
+- However, none of them provides information about greenhouse gas emissions produced by transportation
+
+2. Proposed solution
+- Map navigation app with CO2 information for each taken route plus a cumulative sum
+- Web application with transport navigation
+- Find and choose routes between any two locations
+- Choose type of route and mean of transport
+- Monitor your carbon footprint for each route
+- Carbon emissions depend on mean of transport
+- Connected to external navigation API
+
+
+
+Commitments (Requirements that you commit to implement)
+- Role of basic user with all capabilities
+
+Extensions (Requirements that you might implement if time permits)
+- Role of admin with all capabilities
+
+Exclusions (Requirements that are not considered)
+- Roles of town hall and external company

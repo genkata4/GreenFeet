@@ -1,0 +1,24 @@
+Project requirements:
+
+1. Functional:
+
+- System can be used in four different roles (user, admin, town hall, external travel company)
+- Role users must have an account to be able to access the content
+- User can register and create an account
+- User can login if already has an account
+- User can view account profile where are information such as user name, carbon footprint and taken routes
+- User can change user name in account profile
+- Every route must have an information about starting point, destination, distance, time, carbon emissions, type (fast, short, smart) and transport mode (car, public transport, bicycle, pedestrian)
+- User can plan a new route by selecting starting point, destination, type and transport mode
+- User can choose a route from list of all possible routes
+- After user choose a route its carbon emissions are added to user's carbon footprint
+- Roles of user and external travel company can view all routes of other users
+- All roles can see statistics of all recorded routes in the system
+
+
+2. Non-functional:
+- System should be fast and reliable
+- User interface must be user-friendly
+- Server side must be implemented using Java 8, Spring Boot and MySQL database
+- Client side must be implemented using JavaScript ES6 and libraries React and Redux
+- System must follow basic privacy principles
